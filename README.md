@@ -15,6 +15,8 @@ Essas foram as tecnologias que utilizei
 ## Authors
  
 * **Vinicius Marinho**: @dinoMarinho (https://github.com/dinoMarinho)
+* **Felipe Manoel**: @Felipe-Silva31 (https://github.com/Felipe-Silva31)
  
  
 Obrigado por me visitar e bom código!
+
