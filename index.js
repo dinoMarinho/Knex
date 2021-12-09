@@ -65,3 +65,11 @@ database.raw("SELECT * FROM games").then(data => {
 }).catch(erro => {
     console.log(erro);
 }); */
+
+
+// Delete
+/* database.delete().where({id: 3}).table('games').then(data => {
+    console.log(data);
+}).catch(erro => {
+    console.log(erro);
+}); */
