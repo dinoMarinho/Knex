@@ -23,7 +23,8 @@ database.insert(dados).into('games').then(data => {
     console.dir(data);
 }).catch(erro => {
     console.dir(erro);
-}); */
+});
+*/
 
 
 //NESTED QUERIES
@@ -40,7 +41,8 @@ database.insert({nome: "Mists of noyah", preco: 25})
     });
 }).catch(erro => {
     console.dir(erro);
-}); */
+});
+*/
 
 
 // WHERE
@@ -55,7 +57,8 @@ database.select(["id", "nome"])
     console.dir(data);
 }).catch(erro => {
     console.dir(erro);
-}); */
+});
+*/
 
 
 //RAW
@@ -64,15 +67,17 @@ database.raw("SELECT * FROM games").then(data => {
     console.log(data);
 }).catch(erro => {
     console.log(erro);
-}); */
+});
+*/
 
 
 // Delete
 /* database.delete().where({id: 3}).table('games').then(data => {
     console.log(data);
 }).catch(erro => {
-    console.log(erro);
-}); */
+    console.log(erro); 
+});
+*/
 
 
 // Update
@@ -80,4 +85,15 @@ database.raw("SELECT * FROM games").then(data => {
     console.log(data);
 }).catch(erro => {
     console.log(erro);
-}); */
+});
+*/
+
+
+// OrderBy
+/*
+database.select().table("games").orderBy("preco", "desc").then(data => {
+    console.log(data);
+}).catch(erro => {
+    console.log(erro);
+});
+*/
