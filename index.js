@@ -121,3 +121,21 @@ database.select(["games.*", "estudios.id as est_id", "estudios.nome as est_nome"
     console.log(erro);
 });
 */
+
+
+async function testeTransacao(){
+    try{
+        await database.transaction(async trans => {
+            await database.insert({nome: "Quaquer", game_id:  4}).table("estudios");
+            await database.insert({nome: "Pyxerelia", game_id:  4}).table("estudios");
+            await database.insert({nome: "Mojang", game_id:  4}).table("estudios");
+            await database.insert({nome: "Gearbox", game_id:  4}).table("estudios");
+            console.log('Success!');
+        });
+    }catch(err){
+        console.log(err);
+    }
+
+}
+
+testeTransacao();
