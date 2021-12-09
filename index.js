@@ -73,3 +73,11 @@ database.raw("SELECT * FROM games").then(data => {
 }).catch(erro => {
     console.log(erro);
 }); */
+
+
+// Update
+/* database.update({preco: 40}).table('games').where({nome: 'Call of Duty'}).then(data => {
+    console.log(data);
+}).catch(erro => {
+    console.log(erro);
+}); */
