@@ -98,12 +98,24 @@ database.select().table("games").orderBy("preco", "desc").then(data => {
 });
 */
 
+
 // Inserção associada
 /*
 database.insert({
     nome: "Blizzard",
     game_id: 4
 }).table("estudios").then(data => {
+    console.log(data);
+}).catch(erro => {
+    console.log(erro);
+});
+*/
+
+
+// JOIN
+/* 
+database.select(["games.*", "estudios.id as est_id", "estudios.nome as est_nome"])
+.table("games").innerJoin("estudios", "estudios.game_id", "games.id").then(data => {
     console.log(data);
 }).catch(erro => {
     console.log(erro);
