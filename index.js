@@ -97,3 +97,15 @@ database.select().table("games").orderBy("preco", "desc").then(data => {
     console.log(erro);
 });
 */
+
+// Inserção associada
+/*
+database.insert({
+    nome: "Blizzard",
+    game_id: 4
+}).table("estudios").then(data => {
+    console.log(data);
+}).catch(erro => {
+    console.log(erro);
+});
+*/
